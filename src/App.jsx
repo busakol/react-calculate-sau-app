@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/home";
+import Home from "./pages/Home";
 import Bmi from "./pages/Bmi";
 import Bmr from "./pages/Bmr";
 import Car from "./pages/Car";
@@ -9,9 +9,9 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/bmi" element={<bmi />} />
-          <Route path="/bmr" element={<bmr />} />
-          <Route path="/car" element={<car />} />
+          <Route path="/bmi" element={<Bmi />} />
+          <Route path="/bmr" element={<Bmr />} />
+          <Route path="/car" element={<Car />} />
         </Routes>
       </BrowserRouter>
     </>
